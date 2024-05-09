@@ -45,12 +45,36 @@ nav ul li a {
 
 /* Main content styles */
 main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     padding: 20px;
 }
 
+.project-section {
+display:flex;
+flex-direction:column;
+align-items: center;
+}
+
+.large-project {
+    width: 400px;
+    height: 250px;
+    border: solid 5px;
+}
+
+.smalls {
+    width: 250px;
+    height: 150px;
+    border: solid 5px;
+    margin:15px;
+}
+
+.small-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 section {
     background-color: #fff;
     padding: 20px;
